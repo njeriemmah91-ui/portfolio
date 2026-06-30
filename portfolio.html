@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emmah Nyambura | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+:root{
+  --bg:#07111f;
+  --card:rgba(255,255,255,.08);
+  --text:#fff;
+  --accent:#5f7cff;
+}
+
+.light{
+  --bg:#f4f6fb;
+  --card:rgba(255,255,255,.8);
+  --text:#111827;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  transition:.3s;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:999;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:right;
+  backdrop-filter:blur(12px);
+  background:rgba(0,0,0,.2);
+}
+
+.logo{
+  font-size:1.7rem;
+  font-weight:700;
+}
+
+nav a{
+  color:var(--text);
+  text-decoration:none;
+  margin-left:20px;
+  
+}
+
+.toggle{
+  cursor:pointer;
+  border:none;
+  padding:10px 15px;
+  border-radius:10px;
+}
+
+.hero{
+  min-height:100vh;
+  padding:120px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:60px;
+}
+
+.profile{
+  width:380px;
+  border-radius:25px;
+  box-shadow:0 0 35px rgba(95,124,255,.4);
+}
+
+.glass{
+  background:var(--card);
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:24px;
+  padding:25px;
+}
+
+.hero-text h1{
+  font-size:4rem;
+}
+
+.hero-text h2{
+  color:var(--accent);
+  min-height:50px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  margin-top:15px;
+  margin-right:10px;
+  border-radius:12px;
+  text-decoration:none;
+  color:white;
+  background:linear-gradient(135deg,#4f46e5,#7c3aed);
+}
+
+section{
+  padding:80px 8%;
+}
+
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+}
+
+.skill{
+  text-align:center;
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.project img{
+  width:100%;
+  border-radius:15px;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+}
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:65px;
+  height:65px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  font-size:32px;
+  color:white;
+}
+
+@media(max-width:900px){
+
+.hero{
+  flex-direction:column;
+  text-align:center;
+}
+
+.profile{
+  width:280px;
+}
+
+.hero-text h1{
+  font-size:2.5rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">EN.</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button class="toggle" onclick="toggleTheme()">
+🌓
+</button>
+
+</header>
+
+<section class="hero">
+
+<img
+class="profile"
+src="https://res.cloudinary.com/dlnf1huz4/image/upload/f_auto,q_auto/ChatGPT_Image_Jun_15_2026_12_45_40_PM_ercbac"
+alt="Emmah Nyambura">
+
+<div class="hero-text">
+
+<h1>Emmah Nyambura</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Frontend Developer passionate about creating modern,
+responsive and user-friendly web applications.
+</p>
+
+<a
+class="btn"
+href="#projects">
+View Projects
+</a>
+
+<a
+class="btn"
+href="#">
+Download CV
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="glass">
+
+<h2>About Me</h2>
+
+<br>
+
+<p>
+I am an aspiring software developer passionate about
+building modern web applications and solving real-world
+problems through technology.
+
+My learning journey has focused on React,
+Redux Toolkit, TypeScript, Node.js,
+Express.js, REST APIs, JWT Authentication,
+Git & GitHub and database concepts.
+
+I enjoy creating responsive user experiences,
+building APIs and continuously improving my
+development skills through practical projects.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<br>
+
+<div class="skills">
+
+<div class="glass skill">HTML5</div>
+<div class="glass skill">CSS3</div>
+<div class="glass skill">JavaScript (ES6+)</div>
+<div class="glass skill">TypeScript</div>
+<div class="glass skill">React</div>
+<div class="glass skill">Redux Toolkit</div>
+<div class="glass skill">Node.js</div>
+<div class="glass skill">Express.js</div>
+<div class="glass skill">REST APIs</div>
+<div class="glass skill">JWT Authentication</div>
+<div class="glass skill">Git & GitHub</div>
+<div class="glass skill">Database Fundamentals</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Featured Projects</h2>
+
+<br>
+
+<div class="projects">
+
+<div class="glass project">
+<h3>Todo Application</h3>
+<br>
+<p>
+Task management application built with
+React and Redux Toolkit.
+</p>
+</div>
+
+<div class="glass project">
+<h3>Authentication System</h3>
+<br>
+<p>
+JWT login, signup, protected routes and
+token management.
+</p>
+</div>
+
+<div class="glass project">
+<h3>Story Platform</h3>
+<br>
+<p>
+Full-stack application with user
+authentication and content sharing.
+</p>
+</div>
+
+<div class="glass project">
+<h3>Mental Wellness Journal</h3>
+<br>
+<p>
+Mood tracking and journaling platform
+focused on wellbeing.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Let's Connect</h2>
+
+<br>
+
+<div class="contact-grid">
+
+<div class="glass">
+<h3>Email</h3>
+<p>njeriemmah91@gmail.com</p>
+</div>
+
+<div class="glass">
+<h3>GitHub</h3>
+<p>github.com/njeriemmah91-ui</p>
+</div>
+
+<div class="glass">
+<h3>Location</h3>
+<p>Nairobi, Kenya</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Emmah Nyambura. All Rights Reserved.
+</footer>
+
+<a
+class="whatsapp"
+href="https://wa.me/254117009961"
+target="_blank">
+💬
+</a>
+
+<script>
+
+const words = [
+"Frontend Developer",
+"React Developer",
+"Redux Toolkit Developer",
+"TypeScript Developer",
+"Node.js Developer"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+
+function typeEffect(){
+
+const current = words[wordIndex];
+
+document.getElementById("typing").textContent =
+current.substring(0,charIndex);
+
+charIndex++;
+
+if(charIndex > current.length){
+
+setTimeout(()=>{
+charIndex = 0;
+wordIndex = (wordIndex + 1) % words.length;
+},1000);
+
+}
+
+setTimeout(typeEffect,120);
+}
+
+typeEffect();
+
+function toggleTheme(){
+document.body.classList.toggle("light");
+}
+
+</script>
+
+</body>
+</html>
